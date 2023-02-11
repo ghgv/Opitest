@@ -1,0 +1,245 @@
+(session "Z:\Freddy\Optitest\Optitest\Optitest.ses"
+ (base_design "Z:\Freddy\Optitest\Optitest\Optitest.dsn")
+ (routes 
+  (resolution um 10)
+  (parser
+  )
+  (structure_out
+   (layer F.Cu (type signal)
+   )
+   (layer B.Cu (type signal)
+   )
+  )
+  (library_out
+   (padstack "Via[0-1]_800:400_um"
+    (shape (circ F.Cu 8000 0 0))
+    (shape (circ B.Cu 8000 0 0))
+   )
+  )
+  (network_out
+   (net /Buzzer_1 
+   (wire (path F.Cu 2500  1212437 -832199 1212437 -775896 1255532 -732800
+     1257300 -732800)
+    (connect (terminal via) (terminal smd U1-5))
+   )
+   (wire (path B.Cu 2500  1212437 -832199 1098682 -832199 1082807 -848074
+     1082807 -974725 1066932 -990600 977900 -990600)
+    (connect (terminal via) (terminal pin BZ1-1))
+   )
+   (via "Via[0-1]_800:400_um" 1212437 -832199)
+   )
+   (net "Net-(BZ1-Pad2)" 
+   (wire (path F.Cu 2500  965200 -990600 965200 -986302 996950 -954552
+     1001248 -954552 1016000 -939800)
+    (connect (terminal pin BZ1-2) (terminal pin R8-1))
+   )
+   )
+   (net VCC 
+   (wire (path B.Cu 2500  1320800 -965200 1296549 -940949 1296549 -780738
+     1288612 -772800 1245799 -772800)
+    (connect (terminal pin R5-1) (terminal via))
+   )
+   (wire (path B.Cu 2500  1016000 -787400 1030600 -772800 1245799 -772800)
+    (connect (terminal pin R2-1) (terminal via))
+   )
+   (wire (path B.Cu 2500  1320800 -965200 1320800 -1016000)
+    (connect (terminal pin R5-1) (terminal pin C1-1))
+   )
+   (wire (path B.Cu 2500  1016000 -723900 1016000 -673100)
+    (connect (terminal pin R3-1) (terminal pin R4-1))
+   )
+   (wire (path B.Cu 2500  1016000 -838200 1016000 -787400)
+    (connect (terminal pin R1-1) (terminal pin R2-1))
+   )
+   (wire (path B.Cu 2500  1016000 -787400 1016000 -723900)
+    (connect (terminal pin R2-1) (terminal pin R3-1))
+   )
+   (wire (path F.Cu 2500  1056400 -983349 1056400 -999500)
+    (connect (terminal via) (terminal smd U2-1))
+   )
+   (wire (path B.Cu 2500  1016000 -838200 1056400 -878600 1056400 -983349)
+    (connect (terminal pin R1-1) (terminal via))
+   )
+   (wire (path F.Cu 2500  1282801 -672800 1257300 -672800)
+    (connect (terminal via) (terminal smd U1-8))
+   )
+   (wire (path B.Cu 2500  1245799 -772800 1245799 -709802 1282801 -672800)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path F.Cu 2500  1245799 -772800 1257300 -772800)
+    (connect (terminal via) (terminal smd U1-3))
+    (attr fanout)
+   )
+   (via "Via[0-1]_800:400_um" 1056400 -983349)
+   (via "Via[0-1]_800:400_um" 1282801 -672800)
+   (via "Via[0-1]_800:400_um" 1245799 -772800
+    (attr fanout))
+   )
+   (net GND 
+   (wire (path F.Cu 2500  1066800 -889000 1030752 -852952 992652 -852952
+     977900 -838200)
+    (connect (terminal pin R7-2) (terminal pin J1-1))
+   )
+   (wire (path F.Cu 2500  1320800 -746600 1320800 -768174 1304925 -784049
+     1289298 -784049)
+    (connect (terminal pin R10-2) (terminal via))
+   )
+   (wire (path B.Cu 2500  1289298 -980784 1289298 -784049)
+    (connect (terminal wire) (terminal via))
+   )
+   (wire (path B.Cu 2500  1289298 -980784 1305800 -997286 1305800 -1016000)
+    (connect (terminal wire) (terminal pin C1-2))
+   )
+   (wire (path F.Cu 2500  1242600 -965200 1117600 -965200)
+    (connect (terminal pin SW5-1) (terminal pin SW5-1@1))
+   )
+   (wire (path F.Cu 2500  1041400 -1000375 1041400 -1028648 973138 -1028648
+     965200 -1036586 965200 -1041400)
+    (connect (terminal smd U2-2) (terminal pin J6-2))
+   )
+   (wire (path B.Cu 2500  974450 -783350 974450 -742878 977900 -739428
+     977900 -723900)
+    (connect (terminal pin J2-1) (terminal pin J3-1))
+   )
+   (wire (path F.Cu 2500  1041400 -1000375 1041400 -986099 1066800 -960699)
+    (connect (terminal smd U2-2) (terminal wire))
+   )
+   (wire (path B.Cu 2500  977900 -838200 977900 -802328 974450 -798878
+     974450 -783350)
+    (connect (terminal pin J1-1) (terminal pin J2-1))
+   )
+   (wire (path F.Cu 2500  1117600 -965200 1071301 -965200 1066800 -960699)
+    (connect (terminal pin SW5-1@1) (terminal wire))
+   )
+   (wire (path B.Cu 2500  1066800 -889000 1066800 -939800)
+    (connect (terminal pin R7-2) (terminal pin R8-2))
+   )
+   (wire (path B.Cu 2500  977900 -723900 977900 -673100)
+    (connect (terminal pin J3-1) (terminal pin J4-1))
+   )
+   (wire (path B.Cu 2500  1320800 -746600 1320800 -711200)
+    (connect (terminal pin R10-2) (terminal pin R6-2))
+   )
+   (wire (path B.Cu 2500  1242600 -965200 1246822 -965200 1266908 -985285
+     1284797 -985285 1289298 -980784)
+    (connect (terminal pin SW5-1) (terminal wire))
+   )
+   (wire (path F.Cu 2500  1066800 -939800 1066800 -960699)
+    (connect (terminal pin R8-2) (terminal wire))
+   )
+   (wire (path F.Cu 2500  977900 -673100 992652 -687852 1069525 -687852
+     1084577 -672800 1117300 -672800)
+    (connect (terminal pin J4-1) (terminal smd U1-9))
+   )
+   (via "Via[0-1]_800:400_um" 1289298 -784049)
+   )
+   (net "Net-(D1-Pad1)" 
+   (wire (path B.Cu 2500  977900 -939800 996027 -921673 996027 -908973
+     1016000 -889000)
+    (connect (terminal pin D1-1) (terminal pin R7-1))
+   )
+   )
+   (net /INF 
+   (wire (path F.Cu 2500  1257300 -712800 1255532 -712800 1133383 -834949
+     1097642 -834949 1081767 -850824 1081767 -888972 1065892 -904847
+     996950 -904847 965200 -936597 965200 -939800)
+    (connect (terminal smd U1-6) (terminal pin D1-2))
+   )
+   )
+   (net /MALO 
+   (wire (path F.Cu 2500  1066800 -838200 1056549 -827949 973138 -827949
+     965200 -835887 965200 -838200)
+    (connect (terminal pin R1-2) (terminal pin J1-2))
+   )
+   (wire (path F.Cu 2500  1066800 -838200 1077051 -827949 1124537 -827949
+     1132475 -820012 1132475 -786207 1119068 -772800 1117300 -772800)
+    (connect (terminal pin R1-2) (terminal smd U1-14))
+   )
+   )
+   (net /REGULAR 
+   (wire (path F.Cu 2500  1066800 -787400 1054499 -775099 966750 -775099
+     961750 -780099 961750 -783350)
+    (connect (terminal pin R2-2) (terminal pin J2-2))
+   )
+   (wire (path F.Cu 2500  1066800 -787400 1066800 -784550 1098550 -752800
+     1117300 -752800)
+    (connect (terminal pin R2-2) (terminal smd U1-13))
+   )
+   )
+   (net /BUENO 
+   (wire (path F.Cu 2500  1066800 -723900 1053874 -710974 973138 -710974
+     965200 -718912 965200 -723900)
+    (connect (terminal pin R3-2) (terminal pin J3-2))
+   )
+   (wire (path F.Cu 2500  1066800 -723900 1077051 -723900 1085951 -732800
+     1117300 -732800)
+    (connect (terminal pin R3-2) (terminal smd U1-12))
+   )
+   )
+   (net /EXCELENTE 
+   (wire (path B.Cu 2500  1066800 -673100 1052048 -658348 973138 -658348
+     965200 -666286 965200 -673100)
+    (connect (terminal pin R4-2) (terminal pin J4-2))
+   )
+   (wire (path F.Cu 2500  1066800 -673100 1077051 -662849 1123551 -662849
+     1126051 -665349 1126051 -680080 1122082 -684049 1092019 -684049
+     1088051 -688018 1088051 -699318 1101532 -712800 1117300 -712800)
+    (connect (terminal pin R4-2) (terminal smd U1-11))
+   )
+   )
+   (net /TXD 
+   (wire (path F.Cu 2500  1117300 -812800 969687 -812800 953812 -828675
+     953812 -864912 977900 -889000)
+    (connect (terminal smd U1-16) (terminal pin J5-1))
+   )
+   )
+   (net /RXD 
+   (wire (path F.Cu 2500  1117300 -792800 1092741 -792800 1082566 -802975
+     962056 -802975 946181 -818850 946181 -873125 962056 -889000
+     965200 -889000)
+    (connect (terminal smd U1-15) (terminal pin J5-2))
+   )
+   )
+   (net /BAT 
+   (wire (path F.Cu 2500  1026400 -999500 1026400 -948055 1058150 -916305
+     1280795 -916305 1320800 -876300)
+    (connect (terminal smd U2-3) (terminal pin R9-1))
+   )
+   (wire (path F.Cu 2500  1026400 -999500 984198 -999500 952448 -1031250
+     952448 -1042514 960386 -1050452 968848 -1050452 977900 -1041400)
+    (connect (terminal smd U2-3) (terminal pin J6-1))
+   )
+   )
+   (net "Net-(SW5-Pad2)" 
+   (wire (path F.Cu 2500  1117600 -1015200 1242600 -1015200)
+    (connect (terminal pin SW5-2@1) (terminal pin SW5-2))
+   )
+   )
+   (net /To_ADC_2 
+   (wire (path B.Cu 2500  1320800 -797400 1320800 -825500)
+    (connect (terminal pin R10-1) (terminal pin R9-2))
+   )
+   (wire (path F.Cu 2500  1320800 -797400 1309831 -797400 1305231 -792800
+     1257300 -792800)
+    (connect (terminal pin R10-1) (terminal smd U1-2))
+   )
+   )
+   (net /CONF 
+   (wire (path F.Cu 2500  1295109 -692800 1257300 -692800)
+    (connect (terminal via) (terminal smd U1-7))
+   )
+   (wire (path B.Cu 2500  1295109 -692800 1301050 -698741 1301050 -894650
+     1320800 -914400)
+    (connect (terminal via) (terminal pin R5-2))
+   )
+   (via "Via[0-1]_800:400_um" 1295109 -692800)
+   )
+   (net /To_R5 
+   (wire (path F.Cu 2500  1117300 -692800 1230276 -692800 1246151 -676925
+     1246151 -668338 1254089 -660400 1320800 -660400)
+    (connect (terminal smd U1-10) (terminal pin R6-1))
+   )
+   )
+  )
+ )
+)

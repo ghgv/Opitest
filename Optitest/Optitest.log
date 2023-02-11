@@ -1,0 +1,45 @@
+source {Z:/Freddy/Optitest/Optitest/~Optitest.do}
+ bus diagonal
+ fanout 5
+ route 20
+ clean 2
+ route 25 16
+ clean 2
+ filter 5
+ recorner diagonal
+ report status
+
+____________________________________________________________________________________________
+ELECTRA Version  8.59
+Design        = Z:\Freddy\Optitest\Optitest\Optitest.dsn
+Report Time   = 23:05:51
+Nets          =       27
+Components    =       22
+Connections   =       42
+Vias          =        6
+Routed Length = 589045.2 um
+Signal Layers =        2
+Power Layers  =        0
+Total Pins    =       67
+Completion    =  100.00%
+Unroutes      =        0
+Routing Time  = 00:00:03
+
+____________________________________________________________________________________________
+|     |          |        |        |        |        |        |        |         |         |
+|  #  |   Pass   | Shorts |DRC Errs|Failures|Unroutes|  Vias  |  Reduc |  Time   |  Total  |
+|_____|__________|________|________|________|________|________|________|_________|_________|
+|    0| Bus      |       0|       0|       0|      42|       0|        |  0:00:00|  0:00:00|
+|    1| Fanout   |       0|       0|       0|      42|      17|        |  0:00:00|  0:00:00|
+|    2| Route    |       8|       0|       0|       0|       8|       0|  0:00:00|  0:00:00|
+|    3| Route    |       0|       0|       0|       0|       8|     100|  0:00:00|  0:00:00|
+|    4| Clean    |       0|       0|       0|       0|       7|        |  0:00:00|  0:00:00|
+|    5| Clean    |       0|       0|       2|       0|       6|        |  0:00:00|  0:00:00|
+|    6| Route    |       0|       0|       0|       0|       6|       0|  0:00:00|  0:00:00|
+|    7| Clean    |       0|       0|       0|       0|       6|        |  0:00:00|  0:00:00|
+|    8| Clean    |       0|       0|       1|       0|       6|        |  0:00:00|  0:00:00|
+|    9| Filter   |       0|       0|       0|       0|       6|       0|  0:00:00|  0:00:00|
+|    9| Recorner |       0|       0|       0|       0|       0|        |  0:00:00|  0:00:00|
+|     |          |        |        |        |        |        |        |         |         |
+|  #  |   Pass   | Shorts |DRC Errs|Failures|Unroutes|  Vias  |  Reduc |  Time   |  Total  |
+|_____|__________|________|________|________|________|________|________|_________|_________|
